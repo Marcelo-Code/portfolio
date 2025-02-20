@@ -1,6 +1,6 @@
 import "animate.css";
 import "./App.css";
-import { Bienvenidos, Welcome } from "./assets/welcome";
+import { Bienvenidos, Welcome } from "./assets/Welcome";
 import { PresentationEnglishText, PresentationSpanishText } from "./Texts";
 import "./App.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
