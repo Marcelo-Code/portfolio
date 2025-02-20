@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Jaldi";
+  src: url(/fonts/OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+.mainContainer {
+  /* background: #0d021e; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: "Jaldi";
+}
+
+.container2 {
+  width: 100%;
+  /* height: 400px; */
+  height: auto;
+  /* clip-path: ellipse(100% 400px at 50% 100%); */
+  /* background: white; */
+  /* background: white; */
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 3) 0%,
+      rgba(255, 255, 255, 0.8) 40%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(/logos/background2.avif);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* padding-top: 100px; */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(to top, #0d021e 0%, black 80%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 20%),
+    url(/background.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: auto;
+  /* background: linear-gradient(to bottom, #0a001b 0%, black 90%); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 85%),
+    url(/background.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.switch {
+  margin-top: 70px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.mainImage {
+  width: 350px;
+  height: auto;
+}
+
+.picture1 {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.text1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/* Cambia a 1 columna y 4 filas cuando el ancho sea menor a 800px */
+@media (max-width: 800px) {
+  .container1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .welcome {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .switch {
+    margin-top: 0px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .picture1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .text1 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
