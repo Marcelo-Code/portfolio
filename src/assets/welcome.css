@@ -4,4 +4,6 @@
   max-width: 400px;
   height: auto;
   overflow: visible;
+  display: block;
+  margin: 0 auto;
 }
